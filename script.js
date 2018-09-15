@@ -1,5 +1,6 @@
 
 //variables variables variables variables variables variables variables variables variables variables variables variables variables variables//
+var boss = document.getElementById("bossHealth"); //the amount of hp the boss has
 var clicks = 0; //number of clicks the user has
 var superClicks = 0; //the number of super clicks the user has (these are gained by buying them with clicks per minute)
 var clickValue = 1; //how many clicks you get everytime you click the button
