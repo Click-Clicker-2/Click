@@ -29,7 +29,7 @@ howManyPerMinutePerMinute.innerHTML = "You have " + perMinutePerMinute + " Click
 /*howMuchClickValue.innerHTML = "You get " + clickValue + " Clicks per click";*/
 //button that gives you more clicks button that gives you more clicks button that gives you more clicks button that gives you more clicks//
 var clicker = function () {
-   clcks += clickValue;
+   clicks += clickValue;
    console.log("works!");
    howManyClicks.innerHTML = "You have " + clicks + " clicks";
 };
