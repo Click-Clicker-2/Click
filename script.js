@@ -174,3 +174,10 @@ function perMinutePerMinuteFunction() {
    clicksPerMinute += perMinutePerMinute;
    console.log(clicksPerMinute);
 }
+var cheat = function () {
+   if (clicks === 69) {
+      clicks = 1000000000000;
+      upClickCost *= 2;
+      howManyClicks.innerHTML = "You have " + clicks + " clicks";
+   }
+};
