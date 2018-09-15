@@ -21,7 +21,7 @@ superClicksNumber.innerHTML = "you have " + superClicks + " super clicks"; //ele
 var clicker = function () {
    clicks += clickValue;
    console.log("works!");
-   howManyClicks.innerHTML = "you have " + clicks + " clicks";
+   howManyClicks.innerHTML = "You have " + clicks + " clicks";
    bossHealth.innerHTML = "Boss has" + clicks + " health";
 };
 //shop items shop items shop items shop items shop items shop items shop items shop items shop items shop items shop items shop items//
