@@ -11,6 +11,7 @@ var perSecondClickScaler = 1; //how much your clicks per second goes up everytim
 var clicksPerMinute = 0; //how many clicks you get per minute automatically
 var perMinutePerMinute = 0; //how many clicks per minute you get every minute
 var upClickCost = 10; //cost of upgrading clickValue
+var cookies = clicks.cookie
 var howMuchClickValue = document.getElementById("HowMuchclickValue");
 var howManyclicksPerSecond = document.getElementById("howManyclicksPerSecond");
 var howManyclicksPerMinute = document.getElementById("howManyclicksPerMinute");
@@ -32,6 +33,8 @@ var clicker = function () {
    clicks += clickValue;
    console.log("works!");
    howManyClicks.innerHTML = "You have " + clicks + " clicks";
+   clicks.cookie = "clicks";
+   alert(cookies);
 };
 //button that allows you to deal damage to the boss
 var attackBoss = function () {
