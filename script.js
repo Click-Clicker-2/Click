@@ -184,5 +184,7 @@ var cheat = function () {
       alert("Cheat");
       clicks += 1000000000000;
       howManyClicks.innerHTML = "You have " + clicks + " clicks";
+      superClicks += 5;
+      superClicksNumber.innerHTML = "you have " + superClicks + " super clicks";
    }
 };
