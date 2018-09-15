@@ -1,5 +1,10 @@
 
 //variables variables variables variables variables variables variables variables variables variables variables variables variables variables//
+var clicker = function () {
+   clcks += clickValue;
+   console.log("works!");
+   howManyClicks.innerHTML = "You have " + clicks + " clicks";
+};
 var bossHP = 200; //the amount of hp the boss has
 var bossValue = 200; //the base hp of the boss
 var clicks = 0; //number of clicks the user has
@@ -28,11 +33,11 @@ howManyclicksPerMinute.innerHTML = "You have " + clicksPerMinute + " Clicks per 
 howManyPerMinutePerMinute.innerHTML = "You have " + perMinutePerMinute + " Clicks per Minutes Per Minute";
 howMuchClickValue.innerHTML = "You get " + clickValue + " Clicks per click";
 //button that gives you more clicks button that gives you more clicks button that gives you more clicks button that gives you more clicks//
-var clicker = function () {
+/*var clicker = function () {
    clcks += clickValue;
    console.log("works!");
    howManyClicks.innerHTML = "You have " + clicks + " clicks";
-};
+};*/
 //button that allows you to deal damage to the boss
 var attackBoss = function () {
    bossHP -= superClicks;
