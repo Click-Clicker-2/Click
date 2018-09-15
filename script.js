@@ -11,6 +11,7 @@ var perSecondClickScaler = 1; //how much your clicks per second goes up everytim
 var clicksPerMinute = 0; //how many clicks you get per minute automatically
 var perMinutePerMinute = 0; //how many clicks per minute you get every minute
 var upClickCost = 10; //cost of upgrading clickValue
+var howMuchClickValue = document.getElementById("HowMuchclickValue");
 var howManyclicksPerSecond = document.getElementById("howManyclicksPerSecond");
 var howManyclicksPerMinute = document.getElementById("howManyclicksPerMinute");
 var howManyPerMinutePerMinute = document.getElementById("howManyPerMinutePerMinute");
@@ -25,6 +26,7 @@ bossHealth.innerHTML = "Boss has " + bossHP + " health"; //element that tells us
 howManyclicksPerSecond.innerHTML = "You have " + clicksPerSecond + " Clicks Per Second";
 howManyclicksPerMinute.innerHTML = "You have " + clicksPerMinute + " Clicks per Minute";
 howManyPerMinutePerMinute.innerHTML = "You have " + perMinutePerMinute + " Clicks per Minutes Per Minute";
+howMuchClickValue.innerHTML = "You get " + clickValue + " Clicks per click";
 //button that gives you more clicks button that gives you more clicks button that gives you more clicks button that gives you more clicks//
 var clicker = function () {
    clicks += clickValue;
