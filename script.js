@@ -31,11 +31,11 @@ var attackBoss = function () {
    console.log("works!");
    bossHealth.innerHTML = "Boss has " + bossHP + " health";
    if (bossHP === 0) {
-      alert("You beat the boss")
-      bossValue += bossValue
-      bossHP += bossValue
+      alert("You beat the boss");
+      bossValue += bossValue;
+      bossHP += bossValue;
       for (var i = 1; i < 10; i += 1) {
-         clicks += bossValue
+         clicks += bossValue;
       }
    }
 };
