@@ -3,7 +3,7 @@
 var bossHP = 200; //the amount of hp the boss has
 var bossValue = 200; //the base hp of the boss
 var clicks = 0; //number of clicks the user has
-var superClicks = 16; //the number of super clicks the user has (these are gained by buying them with clicks per minute)
+var superClicks = 0; //the number of super clicks the user has (these are gained by buying them with clicks per minute)
 var clickValue = 1; //how many clicks you get everytime you click the button
 var clicksPerSecond = 0; //how many clicks you get per second automatically
 var perSecondClickCost = 100; //how much it costs to upgrade clicks per second
