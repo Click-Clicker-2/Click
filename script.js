@@ -36,7 +36,7 @@ var clicker = function () {
 };
 var leaderBoard = function () {
    console.log("works!");
-   document.cookie = "message=hi";
+   document.cookie = clicks;
    alert(document.cookie);
 };
 //button that allows you to deal damage to the boss
