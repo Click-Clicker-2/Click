@@ -31,7 +31,7 @@ howMuchClickValue.innerHTML = "You get " + clickValue + " Clicks per click";
 var clicker = function () {
    clcks += clickValue;
    console.log("works!");
-   howManyClicks.innerHTML = "You have " + clcks + " clicks";
+   howManyClicks.innerHTML = "You have " + clcks + " clcks";
 };
 //button that allows you to deal damage to the boss
 var attackBoss = function () {
