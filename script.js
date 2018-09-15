@@ -22,7 +22,7 @@ var superClicksNumber = document.getElementById("superClicksHeader");
 var boss = document.getElementById("bossHealth"); //element that tells user the boss health
 howManyClicks.innerHTML = "You have " + clicks + " clicks"; //element that tell the user how many clicks they have
 superClicksNumber.innerHTML = "you have " + superClicks + " super clicks"; //element that tell the user how many super clicks they have
-bossHealth.innerHTML = "Boss has " + bossHP + " health"; //element that tells user the boss health
+bossHealth.innerHTML = "The boss has " + bossHP + " health"; //element that tells user the boss health
 howManyclicksPerSecond.innerHTML = "You have " + clicksPerSecond + " Clicks Per Second";
 howManyclicksPerMinute.innerHTML = "You have " + clicksPerMinute + " Clicks per Minute";
 howManyPerMinutePerMinute.innerHTML = "You have " + perMinutePerMinute + " Clicks per Minutes Per Minute";
@@ -37,7 +37,7 @@ var clicker = function () {
 var attackBoss = function () {
    bossHP -= superClicks;
    console.log("works!");
-   bossHealth.innerHTML = "Boss has " + bossHP + " health";
+   bossHealth.innerHTML = "The boss has " + bossHP + " health";
    if (bossHP === 0) {
       alert("You beat the boss");
       bossValue += bossValue;
