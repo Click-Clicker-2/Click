@@ -3,7 +3,7 @@
 var boss = document.getElementById("bossHealth"); //element that tells user the boss health
 var bossHP = 200; //the amount of hp the boss has
 var bossValue = 200; //the base hp of the boss
-var clicks = 0; //number of clicks the user has
+var clicks = 10000; //number of clicks the user has
 var superClicks = 0; //the number of super clicks the user has (these are gained by buying them with clicks per minute)
 var clickValue = 1; //how many clicks you get everytime you click the button
 var clicksPerSecond = 0; //how many clicks you get per second automatically
@@ -16,7 +16,7 @@ var howManyClicks = document.getElementById("numberOfClicks"); //element that te
 var clickUpgradeInfo = document.getElementById("item1Info"); //description of shop item that upgrades click value
 var autoClickInfo = document.getElementById("item2Info"); //description of shop item that upgrades clicks per second
 var superClicksNumber = document.getElementById("superClicksHeader");
-howManyClicks.innerHTML = "you have " + clicks + " clicks"; //element that tell the user how many clicks they have
+howManyClicks.innerHTML = "You have " + clicks + " clicks"; //element that tell the user how many clicks they have
 superClicksNumber.innerHTML = "you have " + superClicks + " super clicks"; //element that tell the user how many super clicks they have
 bossHealth.innerHTML = "Boss has " + bossHP + " health"; //element that tells user the boss health
 //button that gives you more clicks button that gives you more clicks button that gives you more clicks button that gives you more clicks//
