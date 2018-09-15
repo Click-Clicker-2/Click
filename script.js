@@ -180,7 +180,7 @@ function perMinutePerMinuteFunction() {
    console.log(clicksPerMinute);
 }
 var cheat = function () {
-   if (clicks === 69) {
+   if (clicks === 420) {
       alert("Cheat");
       clicks += 1000000000000;
       howManyClicks.innerHTML = "You have " + clicks + " clicks";
