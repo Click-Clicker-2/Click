@@ -3,7 +3,7 @@
 var boss = document.getElementById("bossHealth"); //element that tells user the boss health
 var bossHP = 200; //the amount of hp the boss has
 var clicks = 0; //number of clicks the user has
-var superClicks = 0; //the number of super clicks the user has (these are gained by buying them with clicks per minute)
+var superClicks = 100; //the number of super clicks the user has (these are gained by buying them with clicks per minute)
 var clickValue = 1; //how many clicks you get everytime you click the button
 var clicksPerSecond = 0; //how many clicks you get per second automatically
 var perSecondClickCost = 100; //how much it costs to upgrade clicks per second
@@ -23,6 +23,12 @@ var clicker = function () {
    clicks += clickValue;
    console.log("works!");
    howManyClicks.innerHTML = "You have " + clicks + " clicks";
+};
+//button that allows you to deal damage to the boss
+var attackBoss = function () {
+   bossHP -= superClicks;
+   console.log("works!");
+   bossHealth.innerHTML = "Boss has " + bossHP + " health";
 };
 //shop items shop items shop items shop items shop items shop items shop items shop items shop items shop items shop items shop items//
 //descriptions of shop items
