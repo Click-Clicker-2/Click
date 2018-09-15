@@ -29,6 +29,10 @@ var attackBoss = function () {
    bossHP -= superClicks;
    console.log("works!");
    bossHealth.innerHTML = "Boss has " + bossHP + " health";
+   if (bossHP === 0) {
+      alert("You beat the boss")
+      bossHP += bossHP
+   }
 };
 //shop items shop items shop items shop items shop items shop items shop items shop items shop items shop items shop items shop items//
 //descriptions of shop items
