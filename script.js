@@ -44,7 +44,7 @@ var attackBoss = function () {
    bossHP -= superClicks;
    console.log("works!");
    bossHealth.innerHTML = "The boss has " + bossHP + " health";
-   if (bossHP === 0) {
+   if (bossHP <= 0) {
       alert("You beat the boss");
       bossValue += bossValue;
       bossHP += bossValue;
