@@ -34,7 +34,7 @@ var uppgadeClick = function () {
       clickValue *= 2;
       clicks -= upClickCost;
       upClickCost *= 2;
-      howManyClicks.innerHTML = "you have " + clicks + " clicks";
+      howManyClicks.innerHTML = "You have " + clicks + " clicks";
       clickUpgradeInfo.innerHTML = "this will make each of your clicks worth more! it costs " + upClickCost;
    }
 };
@@ -45,7 +45,7 @@ var upgradeClicksPerSecond = function () {
       clicks -= perSecondClickCost;
       perSecondClickCost += 50;
       perSecondClickScaler += 1;
-      howManyClicks.innerHTML = "you have " + clicks + " clicks";
+      howManyClicks.innerHTML = "You have " + clicks + " clicks";
       autoClickInfo.innerHTML = "this will give you more clicks per second automatically! it costs " + perSecondClickCost;
       console.log("works");
    }
@@ -56,7 +56,7 @@ var gamble1 = function () {
    if (clicks > 100 || clicks === 100) {
       clicks -= 100;
       var win = Math.random();
-      howManyClicks.innerHTML = "you have " + clicks + " clicks";
+      howManyClicks.innerHTML = "You have " + clicks + " clicks";
       if (win > 0.5) {
          clicks += 200;
          alert("you win!!");
@@ -73,7 +73,7 @@ var gamble2 = function () {
    if (clicks > 750 || clicks === 750) {
       clicks -= 750;
       var win = Math.random();
-      howManyClicks.innerHTML = "you have " + clicks + " clicks";
+      howManyClicks.innerHTML = "You have " + clicks + " clicks";
       if (win > 0.6) {
          clicksPerMinute += 250;
          alert("you win!!");
@@ -89,7 +89,7 @@ var superGamble1 = function () {
    if (superClicks >= 2 && clicks >= 1000000) {
       var win = Math.random();
       superClicks -= 2;
-      howManyClicks.innerHTML = "you have " + clicks + " clicks";
+      howManyClicks.innerHTML = "You have " + clicks + " clicks";
       superClicksNumber.innerHTML = "you have " + superClicks + " super clicks";
       if (win > 0.65) {
          superClicks += 7;
@@ -105,7 +105,7 @@ var superGamble2 = function () {
    if (superClicks >= 5) {
       var win = Math.random();
       superClicks -= 5;
-      howManyClicks.innerHTML = "you have " + clicks + " clicks";
+      howManyClicks.innerHTML = "You have " + clicks + " clicks";
       superClicksNumber.innerHTML = "you have " + superClicks + " super clicks";
       if (win > 0.5) {
          clicks += 500000000;
@@ -132,7 +132,7 @@ var superClicksToClicks = function () {
    if (superClicks >= 10) {
       clicks += 500000000;
       superClicks -= 10;
-      howManyClicks.innerHTML = "you have " + clicks + " clicks";
+      howManyClicks.innerHTML = "You have " + clicks + " clicks";
       superClicksNumber.innerHTML = "you have " + superClicks + " super clicks";
    }
 };
@@ -149,7 +149,7 @@ var perSecondClickRunner = setInterval(perSecondClickerFunction, 1000);
 //The function that is run to give you clicks per second.
 function perSecondClickerFunction() {
    clicks += clicksPerSecond;
-   howManyClicks.innerHTML = "you have " + clicks + " clicks";
+   howManyClicks.innerHTML = "You have " + clicks + " clicks";
 }
 //The timer for clicks per minute.
 var perMinuteClickRunner = setInterval(perMinuteClicker, 60000);
