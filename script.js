@@ -42,6 +42,7 @@ var attackBoss = function () {
       alert("You beat the boss");
       bossValue += bossValue;
       bossHP += bossValue;
+      superClicks *= 1.1;
       for (var i = 1; i < 10; i += 1) {
          clicks += bossValue;
       }
