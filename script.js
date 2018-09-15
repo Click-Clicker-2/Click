@@ -49,6 +49,7 @@ var attackBoss = function () {
       bossValue += bossValue;
       bossHP += bossValue;
       superClicks *= 1.25;
+      superClicksNumber.innerHTML = "you have " + superClicks + " super clicks";
       for (var i = 1; i < 10; i += 1) {
          clicks += bossValue;
       }
