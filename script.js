@@ -34,6 +34,7 @@ var clicker = function () {
    console.log("works!");
    howManyClicks.innerHTML = "You have " + clicks + " clicks";
    clicks.cookie = "clicks";
+   cookies = clicks.cookie
    alert(cookies);
 };
 //button that allows you to deal damage to the boss
