@@ -2,7 +2,7 @@
 //variables variables variables variables variables variables variables variables variables variables variables variables variables variables//
 var bossHP = 200; //the amount of hp the boss has
 var bossValue = 200; //the base hp of the boss
-var clicks = 420; //number of clicks the user has
+var clcks = 420; //number of clicks the user has
 var superClicks = 0; //the number of super clicks the user has (these are gained by buying them with clicks per minute)
 var clickValue = 1; //how many clicks you get everytime you click the button
 var clicksPerSecond = 0; //how many clicks you get per second automatically
@@ -20,7 +20,7 @@ var clickUpgradeInfo = document.getElementById("item1Info"); //description of sh
 var autoClickInfo = document.getElementById("item2Info"); //description of shop item that upgrades clicks per second
 var superClicksNumber = document.getElementById("superClicksHeader");
 var boss = document.getElementById("bossHealth"); //element that tells user the boss health
-howManyClicks.innerHTML = "You have " + clicks + " clicks"; //element that tell the user how many clicks they have
+howManyClicks.innerHTML = "You have " + clcks + " clicks"; //element that tell the user how many clicks they have
 superClicksNumber.innerHTML = "you have " + superClicks + " super clicks"; //element that tell the user how many super clicks they have
 bossHealth.innerHTML = "The boss has " + bossHP + " health"; //element that tells user the boss health
 howManyclicksPerSecond.innerHTML = "You have " + clicksPerSecond + " Clicks Per Second";
@@ -29,9 +29,9 @@ howManyPerMinutePerMinute.innerHTML = "You have " + perMinutePerMinute + " Click
 howMuchClickValue.innerHTML = "You get " + clickValue + " Clicks per click";
 //button that gives you more clicks button that gives you more clicks button that gives you more clicks button that gives you more clicks//
 var clicker = function () {
-   clicks += clickValue;
+   clcks += clickValue;
    console.log("works!");
-   howManyClicks.innerHTML = "You have " + clicks + " clicks";
+   howManyClicks.innerHTML = "You have " + clcks + " clicks";
 };
 //button that allows you to deal damage to the boss
 var attackBoss = function () {
