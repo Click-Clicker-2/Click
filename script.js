@@ -38,8 +38,8 @@ var leaderBoard = function () {
    console.log("works!");
    if (clicks >= document.cookie) {
       document.cookie = clicks;
+      alert(document.cookie);
    }
-   alert(document.cookie);
 };
 //button that allows you to deal damage to the boss
 var attackBoss = function () {
