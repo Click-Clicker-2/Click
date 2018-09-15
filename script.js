@@ -2,6 +2,7 @@
 //variables variables variables variables variables variables variables variables variables variables variables variables variables variables//
 var boss = document.getElementById("bossHealth"); //element that tells user the boss health
 var bossHP = 200; //the amount of hp the boss has
+var bossValue = 200; //the base hp of the boss
 var clicks = 0; //number of clicks the user has
 var superClicks = 0; //the number of super clicks the user has (these are gained by buying them with clicks per minute)
 var clickValue = 1; //how many clicks you get everytime you click the button
@@ -31,7 +32,11 @@ var attackBoss = function () {
    bossHealth.innerHTML = "Boss has " + bossHP + " health";
    if (bossHP === 0) {
       alert("You beat the boss")
-      bossHP += bossHP
+      bossValue += bossValue
+      bossHP += bossValue
+      for (var i = 1; i < 10; i += 1) {
+         clicks += bossValue
+      }
    }
 };
 //shop items shop items shop items shop items shop items shop items shop items shop items shop items shop items shop items shop items//
