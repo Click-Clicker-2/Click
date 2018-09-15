@@ -22,7 +22,7 @@ var boss = document.getElementById("bossHealth"); //element that tells user the 
 howManyClicks.innerHTML = "You have " + clicks + " clicks"; //element that tell the user how many clicks they have
 superClicksNumber.innerHTML = "you have " + superClicks + " super clicks"; //element that tell the user how many super clicks they have
 bossHealth.innerHTML = "Boss has " + bossHP + " health"; //element that tells user the boss health
-howManyclicksPerSecond.innerHTML = "You have " + clicksPerSecond + " ClicksPerSecond";
+howManyclicksPerSecond.innerHTML = "You have " + clicksPerSecond + " Clicks Per Second";
 howManyclicksPerMinute.innerHTML = "You have " + clicksPerMinute + " Clicks per Minute";
 howManyPerMinutePerMinute.innerHTML = "You have " + perMinutePerMinute + " Clicks per Minutes Per Minute";
 //button that gives you more clicks button that gives you more clicks button that gives you more clicks button that gives you more clicks//
@@ -67,6 +67,7 @@ var upgradeClicksPerSecond = function () {
       perSecondClickCost += 50;
       perSecondClickScaler += 1;
       howManyClicks.innerHTML = "You have " + clicks + " clicks";
+      howManyclicksPerSecond.innerHTML = "You have " + clicksPerSecond + " Clicks Per Second";
       autoClickInfo.innerHTML = "this will give you more clicks per second automatically! it costs " + perSecondClickCost;
       console.log("works");
    }
@@ -98,6 +99,7 @@ var gamble2 = function () {
       if (win > 0.5) {
          clicksPerMinute += 250;
          alert("you win!!");
+         howManyclicksPerMinute.innerHTML = "You have " + clicksPerMinute + " Clicks per Minute";
       }
       if (win < 0.6) {
          for (var i = 1; i < 20; i += 1) {
@@ -146,6 +148,7 @@ var buySuperClicks = function () {
       superClicks += 1;
       clicksPerMinute -= 1000;
       superClicksNumber.innerHTML = "you have " + superClicks + " super clicks";
+      howManyclicksPerMinute.innerHTML = "You have " + clicksPerMinute + " Clicks per Minute";
    }
 };
 //function for selling super clicks
@@ -184,6 +187,7 @@ var perMinutePerMinuteRunner = setInterval(perMinutePerMinuteFunction, 60000);
 function perMinutePerMinuteFunction() {
    clicksPerMinute += perMinutePerMinute;
    console.log(clicksPerMinute);
+   howManyclicksPerMinute.innerHTML = "You have " + clicksPerMinute + " Clicks per Minute";
 }
 var cheat = function () {
    if (clicks === 420) {
