@@ -1,6 +1,5 @@
 
 //variables variables variables variables variables variables variables variables variables variables variables variables variables variables//
-var boss = document.getElementById("bossHealth"); //element that tells user the boss health
 var bossHP = 200; //the amount of hp the boss has
 var bossValue = 200; //the base hp of the boss
 var clicks = 0; //number of clicks the user has
@@ -12,13 +11,20 @@ var perSecondClickScaler = 1; //how much your clicks per second goes up everytim
 var clicksPerMinute = 0; //how many clicks you get per minute automatically
 var perMinutePerMinute = 0; //how many clicks per minute you get every minute
 var upClickCost = 10; //cost of upgrading clickValue
+var howManyclicksPerSecond = document.getElementById("howManyclicksPerSecond");
+var howManyclicksPerMinute = document.getElementById("howManyclicksPerMinute");
+var howManyPerMinutePerMinute = document.getElementById("howManyPerMinutePerMinute");
 var howManyClicks = document.getElementById("numberOfClicks"); //element that tell the user how many clicks they have
 var clickUpgradeInfo = document.getElementById("item1Info"); //description of shop item that upgrades click value
 var autoClickInfo = document.getElementById("item2Info"); //description of shop item that upgrades clicks per second
 var superClicksNumber = document.getElementById("superClicksHeader");
+var boss = document.getElementById("bossHealth"); //element that tells user the boss health
 howManyClicks.innerHTML = "You have " + clicks + " clicks"; //element that tell the user how many clicks they have
 superClicksNumber.innerHTML = "you have " + superClicks + " super clicks"; //element that tell the user how many super clicks they have
 bossHealth.innerHTML = "Boss has " + bossHP + " health"; //element that tells user the boss health
+howManyclicksPerSecond.innerHTML = "You have " + clicksPerSecond + " ClicksPerSecond";
+howManyclicksPerMinute.innerHTML = "You have " + clicksPerMinute + " Clicks per Minute";
+howManyPerMinutePerMinute.innerHTML = "You have " + perMinutePerMinute + " Clicks per Minutes Per Minute";
 //button that gives you more clicks button that gives you more clicks button that gives you more clicks button that gives you more clicks//
 var clicker = function () {
    clicks += clickValue;
