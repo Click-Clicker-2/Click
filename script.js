@@ -133,6 +133,7 @@ var superGamble2 = function () {
       if (win > 0.5) {
          clicks += 500000000;
          alert("you win");
+         howManyPerMinutePerMinute.innerHTML = "You have " + perMinutePerMinute + " Clicks per Minutes Per Minute";
       }
       if (win < 0.5) {
          for (var i = 1; i < 20; i += 1) {
@@ -165,6 +166,7 @@ var perMinutePerMinuteBuyer = function () {
       superClicks -= 3;
       perMinutePerMinute += 500;
       superClicksNumber.innerHTML = "you have " + superClicks + " super clicks";
+      howManyPerMinutePerMinute.innerHTML = "You have " + perMinutePerMinute + " Clicks per Minutes Per Minute";
    }
 };
 //auto clicks auto clicks auto clicks auto clicks auto clicks auto clicks auto clicks auto clicks auto clicks auto clicks auto clicks//
