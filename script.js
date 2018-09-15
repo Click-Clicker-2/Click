@@ -68,13 +68,13 @@ var gamble1 = function () {
       }
    }
 };
-//the second gambling item you can buy. Price: 750 clicks, chance of winning: 40%, reward: 250 clicks per minute, punishment: 20 window alerts.
+//the second gambling item you can buy. Price: 750 clicks, chance of winning: 50%, reward: 250 clicks per minute, punishment: 20 window alerts.
 var gamble2 = function () {
    if (clicks > 750 || clicks === 750) {
       clicks -= 750;
       var win = Math.random();
       howManyClicks.innerHTML = "You have " + clicks + " clicks";
-      if (win > 0.6) {
+      if (win > 0.5) {
          clicksPerMinute += 250;
          alert("you win!!");
       }
