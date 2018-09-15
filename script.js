@@ -17,12 +17,12 @@ var autoClickInfo = document.getElementById("item2Info"); //description of shop 
 var superClicksNumber = document.getElementById("superClicksHeader");
 howManyClicks.innerHTML = "you have " + clicks + " clicks"; //element that tell the user how many clicks they have
 superClicksNumber.innerHTML = "you have " + superClicks + " super clicks"; //element that tell the user how many super clicks they have
+bossHealth.innerHTML = "Boss has " + bossHP + " health"; //element that tells user the boss health
 //button that gives you more clicks button that gives you more clicks button that gives you more clicks button that gives you more clicks//
 var clicker = function () {
    clicks += clickValue;
    console.log("works!");
    howManyClicks.innerHTML = "You have " + clicks + " clicks";
-   bossHealth.innerHTML = "Boss has " + bossHP + " health";
 };
 //shop items shop items shop items shop items shop items shop items shop items shop items shop items shop items shop items shop items//
 //descriptions of shop items
