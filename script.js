@@ -41,8 +41,8 @@ var attackBoss = function () {
 };
 //shop items shop items shop items shop items shop items shop items shop items shop items shop items shop items shop items shop items//
 //descriptions of shop items
-clickUpgradeInfo.innerHTML = "this will make each of your clicks worth more! it costs " + upClickCost;
-autoClickInfo.innerHTML = "this will give you more clicks per second automatically! it costs " + perSecondClickCost;
+clickUpgradeInfo.innerHTML = "This will make each of your clicks worth more! it costs " + upClickCost;
+autoClickInfo.innerHTML = "This will give you more clicks per second automatically! it costs " + perSecondClickCost;
 //click upgrader (upgrades how many clicks you get with each click)
 var uppgadeClick = function () {
    if (clicks > upClickCost || clicks === upClickCost) {
