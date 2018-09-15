@@ -22,7 +22,7 @@ var clicker = function () {
    clicks += clickValue;
    console.log("works!");
    howManyClicks.innerHTML = "You have " + clicks + " clicks";
-   bossHealth.innerHTML = "Boss has" + clicks + " health";
+   bossHealth.innerHTML = "Boss has " + bossHP + " health";
 };
 //shop items shop items shop items shop items shop items shop items shop items shop items shop items shop items shop items shop items//
 //descriptions of shop items
